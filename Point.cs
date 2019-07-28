@@ -7,7 +7,7 @@ using SFML.Graphics;
 
 namespace _2dWrapper
 {
-    class Point
+    public class Point
     {
         public Vector2f PointVector { get; set; }
         public CircleShape PointShape { get; set; }
@@ -18,12 +18,12 @@ namespace _2dWrapper
         //{
 
         //}
-        Point(float x, float y)
+        public Point(float x, float y)
         {
             PointVector = new Vector2f(x, y);
-            CircleShape circle = new CircleShape(2);
-            circle.Position = PointVector;
-            circle.FillColor = Color.White;
+            PointShape = new CircleShape(2);
+            PointShape.Position = PointVector;
+            PointShape.FillColor = Color.White;
             
         }
         //Point(FileStream fileOfPoints)

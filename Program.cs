@@ -6,7 +6,9 @@ namespace _2dWrapper
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
+            var window = new Window();
+            window.Run();
         }
     }
 }

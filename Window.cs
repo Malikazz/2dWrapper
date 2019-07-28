@@ -5,8 +5,9 @@ using SFML.Window;
 
 namespace _2dWrapper
 {
-    class Window
+    public class Window
     {
+        Point point = new Point(200, 200);
         public void Run()
         {
             var mode = new SFML.Window.VideoMode(600, 600);
@@ -16,7 +17,7 @@ namespace _2dWrapper
             while (window.IsOpen)
             {
                 window.DispatchEvents();
-                //window.Draw();
+                window.Draw(point.PointShape);
                 window.Display();
             }
         }
