@@ -17,8 +17,10 @@ namespace _2dWrapper
                 window.AddToDraw(points[counter].PointShape);
             }
             window.Run();
-
             
+      
+
+
         }
     }
 }
